@@ -1,0 +1,116 @@
+body {
+    background-color: #cccccc;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;   
+}
+
+header {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}   
+
+.quadro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 725px;
+    margin-top: 15px;
+}
+
+.container {
+    min-height: 180px;
+    max-width: 330px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px #999;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.quadro1 a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quadro2 a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 15px);
+    height: 55px;
+    margin-right: 15px;
+    border: 2px solid rgb(107, 199, 206);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(19, 224, 163);
+}
+
+::placeholder {
+    font-size: 18px;
+    font-style: italic;
+}
+
+button {
+    background-color: rgb(9, 72, 83);
+    height: 40px;
+    margin-top: 10px;
+    padding-inline: 10px;
+
+    border-radius: 6px;
+    color: rgb(19, 224, 163);
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 770px) {
+    .blocs {
+        flex-direction: column;
+    }    
+    .bloc2 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .blocs {
+        width: 88%;
+    }
+    .container {
+        height: 100%;
+    }
+}
+
+@media (max-width: 300px) {
+    .blocs {
+        width: 88%;
+    }
+    .container {
+        height: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 220px;
+    font-size: 18px;
+}
+
+footer a {
+    font-weight: bold;
+}
